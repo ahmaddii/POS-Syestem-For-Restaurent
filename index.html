@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice and Spice Pizza Time | POS System | Order Managment</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" > 
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍕 Slice And Spice Pizza Time</h1>
+            <div class="order-info">
+                <div>📍 Mianwali, Punjab</div>
+                <div>📞 0305-706125</div>
+                <div>🧾 Order #<span id="orderNumber">001</span></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="menu-section">
+                <h2>🍽️ Our Menu</h2>
+                <div id="menuGrid" class="menu-grid"></div>
+            </div>
+
+            <div class="order-section">
+                <h2>🛒 Current Order</h2>
+                <div id="orderItems" class="order-items">
+                    <div class="empty-order">Click on menu items to add to order</div>
+                </div>
+                
+                <div class="order-total">
+                    <h3>Total Amount</h3>
+                    <div class="total-amount">Rs. <span id="totalAmount">0</span></div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="printOrder()">🖨️ Print Order</button>
+                    <button class="btn btn-secondary" onclick="clearOrder()">🗑️ Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipt Modal -->
+    <div id="receiptModal" class="receipt-modal">
+        <div class="receipt-content">
+            <button class="close-btn" onclick="closeReceipt()">×</button>
+            <div id="receiptContent" class="receipt-paper"></div>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+
+    <!-- Footer HTML -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>We are passionate about delivering quality foods.</p>
+    </div>
+  
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: slicespice@gmail.com</p>
+      <p>Phone: +1 234 567 890</p>
+      <p>Address: PAF Road Mianwali</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Slice and Spice. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+   
+</body>
+</html>
