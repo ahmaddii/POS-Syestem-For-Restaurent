@@ -1,1 +1,1 @@
-POS Syestem for Slice and Spice
+POS Syestem for Slice and Spice System
