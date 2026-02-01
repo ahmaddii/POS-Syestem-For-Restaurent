@@ -1,1 +1,1 @@
-POS Syestem for Slice and Spice System
+POS Syestem for Slice and Spice Restaurent
